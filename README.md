@@ -1,5 +1,6 @@
 # Ride-Hailing System
 
+
 ## 1. Architectural Mapping
 ```text
 ride-hailing-system/
