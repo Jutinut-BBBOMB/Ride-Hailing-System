@@ -3,32 +3,33 @@
 ## 1. Architectural Mapping
 ```text
 ride-hailing-system/
-│
-├── controller/
-│   ├── ride_handler.go
-│   ├── user_handler.go
+├── cmd/
+│   └── server/
+│       └── main.go          
+├── handler/
 │   ├── payment_handler.go
-│   └── vehicle_handler.go
-│
-├── service/
-│   ├── ride_service.go
-│   ├── user_service.go
-│   ├── payment_service.go
-│   └── vehicle_service.go
-│
-├── repository/
-│   ├── ride_repository.go
-│   ├── user_repository.go
-│   ├── payment_repository.go
-│   └── vehicle_repository.go
-│
+│   ├── ride_handler.go
+│   |── user_handler.go
+│   |── vehicle_handler.go
 ├── model/
-│   ├── user.go
+│   ├── payment.go
 │   ├── ride.go
-│   ├── vehicle.go
-│   └── payment.go
-│
-└── main.go
+│   |── user.go
+│   |── vehicle.go
+├── repository/
+│   ├── payment_repository.go
+│   ├── ride_repository.go
+│   |── user_repository.go
+│   |── vehicle_repository.go
+├── service/
+│   ├── payment_service.go
+│   ├── ride_service.go
+│   |── user_service.go
+│   |── vehicle_service.go         
+├── README.md                     
+├── go.mod                   
+├── go.sum                  
+└── Makefile                
 ```
 ---
 
